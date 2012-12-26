@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="KO"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="KO"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="KO"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="KO"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -40,9 +40,15 @@
                     <a class="brand" href="#"><b>Check</b></a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li class="active"><a href="#">홈</a></li>                          
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Check<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">소개</a></li>
+                                    <li><a href="#">지사소개</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">제품소개</a></li>
                             
                         </ul>
                         <!--
@@ -54,14 +60,13 @@
                 		</form>
                 		-->
                 		<ul class="nav pull-right">
-                			<li><a href="#">Contact us</a></li>
+                			<li><a href="mailto:support@poniel.com">Contact Us</a></li>
                 			<li class="dropdown">
-                			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">언어<b class="caret"></b></a>
+                			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Languages <b class="caret"></b></a>
                 			    <ul class="dropdown-menu">
-                			        <li><a href="../en/index.html">영어</a></li>
-                			        <li><a href="../jp/index.html">일본어</a></li>
+                			        <li><a href="../en/index.html">english</a></li>
+                			        <li><a href="../jp/index.html">日本語</a></li>
                 			        <li><a href="../ko/index.html">한국어</a></li>
-                			        
                 			    </ul>
                 			</li>
                   		</ul>
@@ -75,13 +80,28 @@
         </div>
 
         <div class="container">
-
+        			
             <!-- Main hero unit for a primary marketing message or call to action -->
             <div class="hero-unit">
-                <h1>Check</h1>
+            	<h1>Check</h1>
                 <p></p>
-                <p>저희 회사는 일본 도쿄에 위치하고 있으며 한국과 미국에 지사를 두며 각종 휴대폰 및 모바일기기 악세서리 제조및 판매하고 있습니다.</p>
+                <p>저희 회사는 일본 도쿄에 위치하고 있으며 한국과 미국에 지사를 두며 각종 휴대폰 및 모바일기기 악세서리 제조및 유통하고 있습니다.</p>
                 <p><a class="btn btn-primary btn-large" href="http://amzn.to/fi27QE">Go to Amazon shop &raquo;</a></p>
+                
+                <!-- twitter -->
+                <div class="pull-right">
+                	<span class="">
+                		<a href="https://twitter.com/twitter" class="twitter-follow-button" data-show-count="false" data-lang="ko" data-size="large"></a>
+                	</span>
+                	
+                	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                	</script>
+                	
+                		      
+                </div>
+                <!-- /twitter --> 
+                
+                              
             </div>
 
             <!-- Example row of columns -->
@@ -106,7 +126,7 @@
             </div>
 
             <hr>
-
+            
             <footer>
                 <p>&copy; Check Inc. 2012</p>
             </footer>
@@ -127,5 +147,8 @@
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+        
+        
+        
     </body>
 </html>
