@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ZH"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="ZH"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ZH"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ZH"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="EN"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="EN"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="EN"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="EN"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Check</title>
-        <meta name="description" content="">
+        <meta name="description" content="The Check's website v0.5">
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -37,12 +37,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="#"><b>Check</b></a>
+                    <a class="brand" href="index.html"><b>Check</b></a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about/about.html">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Check<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./about/about.html">About</a></li>
+                                    <li><a href="./branch/branch.html">Branch</a></li>
+                                </ul>                                
+                            </li>
+                            <li><a href="./products/products.html">Products</a></li>                            
+                            <li><a href="./recruit/recruit.html">Recruitment</a>
                             
                         </ul>
                         <!--
@@ -54,19 +61,22 @@
                 		</form>
                 		-->
                 		<ul class="nav pull-right">
-                			<li><a href="#">Contact us</a></li>
+                			<li><a href="mailto:central@poniel.com">Contact us</a></li>
                 			<li class="dropdown">
                 			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Languages <b class="caret"></b></a>
                 			    <ul class="dropdown-menu">
                 			        <li><a href="../en/index.html">English</a></li>
                 			        <li><a href="../jp/index.html">日本語</a></li>
-                			        <li><a href="../ko/index.html">한국어</a></li>
+                			        <li><a href="../ko/index.html">한국어</a></li>                			      
                 			    </ul>
                 			</li>
                   		</ul>
+                  		
+                		<!--
                 		<form class="navbar-search pull-right">
                 			<input type="text" class="search-query">
                 		</form>
+                		-->
                         
                     </div><!--/.nav-collapse -->
                 </div>
@@ -78,28 +88,48 @@
             <!-- Main hero unit for a primary marketing message or call to action -->
             <div class="hero-unit">
                 <h1>Check</h1>
-                <p>Our company is in Akihabara, Tokyo</p>
-                <p><a class="btn btn-primary btn-large" href="http://amzn.to/fi27QE">Go to Amazon shop &raquo;</a></p>
+                <p><b>Check</b> up price and design then <b>Check</b> out!</p>             
+                <p><a class="btn btn-primary btn-large" href="http://amzn.to/fi27QE">Go to Amazon store &raquo;</a></p>
+                
+                <!-- twitter -->
+                <div class="pull-right">
+                	<span class="">
+                		<a href="https://twitter.com/twitter" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large"></a>
+                	</span>
+                	
+                	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                	</script>
+                	
+                		      
+                </div>
+                <!-- /twitter --> 
+                
             </div>
 
             <!-- Example row of columns -->
             <div class="row">
                 <div class="span4">
                     <h2>Japan</h2>
-                    <p>Selling products : Cellphone Cases, Power bank (sub battery for potable devices), Cables for devices</p>
-                    <p><a class="btn" href="http://amzn.to/fi27QE">Go to shop &raquo;</a></p>
+                    <p>Making planning and marketing for products</p>
+                    <p>Design and internet service</p>
+                    <p>Selling products on online store</p>
+                    <p><a class="btn" href="http://amzn.to/fi27QE">Go to store &raquo;</a></p>
                 </div>
                 <div class="span4">
                     <h2>America</h2>
-                    <p>Under Construction.</p>
-                    <p>Online shop in America</p>
-                    <p><a class="btn" href="#">Go to shop &raquo;</a></p>
+                    <p>Selling products on online store</p>
+                   <!-- 
+                    <p><a class="btn" href="#">Go to store &raquo;</a></p>
+                    -->
                </div>
                 <div class="span4">
                     <h2>Korea</h2>
-                    <p>Under Construction.</p>
-                    <p>Online shop in Korea</p>
-                    <p><a class="btn" href="#">Go to shop &raquo;</a></p>
+                    <p>Research and Development Center</p>
+                    <p>Design, internet service and Electronics</p>
+                    <p>Selling products on online store</p>
+                    <!--
+                    <p><a class="btn" href="#">Go to store &raquo;</a></p>
+                    -->
                 </div>
             </div>
 
